@@ -1,0 +1,151 @@
+@media (max-width: 1440px) {
+    body {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+    .container {
+        max-width: 90%;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: 95%;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.3rem;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 424px) {
+    body {
+        font-size: 1.1rem;
+    }
+    .container {
+        padding: 8px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 6px;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 0.95rem;
+    }
+    .container {
+        padding: 4px;
+        border-radius: 3px;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+
+.container {
+    max-width: 900px;
+    max-height: 900px;
+    margin: 40px auto;
+    background: #fff3e0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffcc80;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e65100;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe0b2;
+    margin-top: 40px;
+    font-size: 14px;
+}
