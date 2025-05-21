@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bengali Popular Recipes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ff8c42;
+        }
+
+        header {
+            background-color: #ff8c42;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff8c42;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(255, 140, 66, 0.10);
+            transition:
+                background 0.3s,
+                color 0.3s,
+                box-shadow 0.3s,
+                transform 0.2s;
+            cursor: pointer;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: #ffb26b;
+            color: #fff;
+            box-shadow: 0 6px 24px rgba(255, 140, 66, 0.25);
+            transform: translateY(-3px) scale(1.06);
+            text-decoration: none;
+            outline: none;
+        }
+
+        /* Styled button (no interaction) */
+        .main-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #ff8c42;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: default;
+            /* no pointer cursor since no JS */
+            width: max-content;
+            user-select: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Card styled as a button but actually a div */
+        .card {
+            background-color: white;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card .big {
+            width: 255px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+
+        }
+
+        .card-body {
+            padding: 15px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #ff8c42;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #ff8c42;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .veg {
+            width: 30px;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>All Bengali Food Recipe's</h1>
+    </header>
+    <!-- Bengali main start -->
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🥘 Bengali Main Dishes
+    </h2>
+    <!-- Bengali main start -->
+    <div class="container">
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/shorshe-ilish.jpeg" alt="Shorshe Ilish">
+            <div class="card-body">
+                <div class="card-title">Shorshe Ilish</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Hilsa fish cooked in a pungent mustard gravy, a Bengali delicacy.</div>
+                <a href="shorshe-ilish.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/Chingri Malai Curry.jpeg" alt="Chingri Malai Curry">
+            <div class="card-body">
+                <div class="card-title">Chingri Malai Curry</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Prawns simmered in a creamy coconut milk curry with aromatic spices.</div>
+                <a href="chingri-malai-curry.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;
+        height: auto;" class="big" src="./assets/macher-jhol.jpeg" alt="Macher Jhol">
+            <div class="card-body">
+                <div class="card-title">Macher Jhol</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Traditional Bengali fish curry with potatoes and vegetables in a light broth.
+                </div>
+                <a href="macher-jhol.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;
+        height: auto;" class="big" src="./assets/shutki-machh.jpeg" alt="Shutki Machh">
+            <div class="card-body">
+                <div class="card-title">Shutki Machh</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Fermented dried fish cooked with spices, a bold-flavored Bengali specialty.</div>
+                <a href="shutki-machh.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;
+        height: auto;" class="big" src="./assets/Kosha Mangsho.jpeg" alt="Kosha Mangsho">
+            <div class="card-body">
+                <div class="card-title">Kosha Mangsho</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Spicy, slow-cooked mutton curry rich in flavor and aroma.</div>
+                <a href="kosha-mangsho.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/doi-maach.jpeg" alt="Doi Maach">
+            <div class="card-body">
+                <div class="card-title">Doi Maach</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Fish cooked in a tangy, creamy yogurt-based curry.</div>
+                <a href="doi-maach.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/Lau Chingri.jpeg" alt="Lau Chingri">
+            <div class="card-body">
+                <div class="card-title">Lau Chingri</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Bottle gourd cooked with shrimp in a light, flavorful gravy.</div>
+                <a href="lau-chingri.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/pabda-shorshe.jpeg" alt="Pabda Shorshe">
+            <div class="card-body">
+                <div class="card-title">Pabda Shorshe</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Pabda fish simmered in a spicy mustard sauce, a Bengali favorite.</div>
+                <a href="pabda-shorshe.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bengali 🥗 Vegetarian  start -->
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🥗 Vegetarian Dishes
+    </h2>
+    <!-- Bengali 🥗 Vegetarian end -->
+    <div class="container">
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/Shukto.jpeg" alt="Shukto">
+            <div class="card-body">
+                <div class="card-title">Shukto</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Bitter mixed vegetable curry, a classic Bengali starter with subtle spices.</div>
+                <a href="shukto.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/chorchori.avif" alt="Chorchori">
+            <div class="card-body">
+                <div class="card-title">Chorchori</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Mixed vegetables stir-fried with mustard paste, a rustic Bengali favorite.</div>
+                <a href="chorchori.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/labra.jpeg" alt="Labra">
+            <div class="card-body">
+                <div class="card-title">Labra</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Assorted seasonal vegetables cooked with Bengali spices.</div>
+                <a href="labra.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;
+            height: auto;" class="big" src="./assets/begun-bharta.jpeg" alt="Begun Bharta">
+            <div class="card-body">
+                <div class="card-title">Begun Bharta</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Roasted eggplant mash blended with spices and herbs.</div>
+                <a href="begun-bharta.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/Aloo Posto.jpeg" alt="Aloo Posto">
+            <div class="card-body">
+                <div class="card-title">Aloo Posto</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Potatoes cooked with poppy seeds, a creamy Bengali classic.</div>
+                <a href="aloo-posto.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/Dhokar Dalna.jpeg" alt="Dhokar Dalna">
+            <div class="card-body">
+                <div class="card-title">Dhokar Dalna</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Lentil cakes simmered in a spicy, flavorful curry.</div>
+                <a href="dhokar-dalna.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/Chana’r Dalna.jpeg" alt="Chana’r Dalna">
+            <div class="card-body">
+                <div class="card-title">Chana’r Dalna</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Paneer curry cooked Bengali-style with potatoes and spices.</div>
+                <a href="chanar-dalna.html" class="btn">Recipe</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bengali 🍚 Rice & Accompanimentsstart -->
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🍚 Rice & Accompaniments
+    </h2>
+    <!-- 🍚 Rice & Accompaniments end -->
+
+
+    <div class="container">
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/bhoger-khichuri.jpeg" alt="Bhoger Khichuri">
+            <div class="card-body">
+                <div class="card-title">Bhoger Khichuri</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Festive rice and lentil dish with vegetables, often served during religious
+                    occasions.</div>
+                <a href="bhoger-khichuri.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/basanti-pulao.jpeg" alt="Basanti Pulao">
+            <div class="card-body">
+                <div class="card-title">Basanti Pulao</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Sweet yellow pulao made with aromatic rice, ghee, and a hint of saffron.</div>
+                <a href="basanti-pulao.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/Plain Steamed Rice.jpeg" alt="Plain Steamed Rice">
+            <div class="card-body">
+                <div class="card-title">Plain Steamed Rice</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Simple steamed rice, a staple served with dal, fish, or meat curries.</div>
+                <a href="plain-steamed-rice.html" class="btn">Recipe</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Bengali 🍲 Lentils & Sidesstart -->
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🍲 Lentils & Sides
+    </h2>
+    <!-- 🍲 Lentils & Sides end -->
+
+    <div class="container">
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/masoor-dal.jpeg" alt="Masoor Dal">
+            <div class="card-body">
+                <div class="card-title">Masoor Dal</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Red lentil dal, a simple and comforting Bengali lentil preparation.</div>
+                <a href="masoor-dal.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/cholar-dal.jpeg" alt="Cholar Dal">
+            <div class="card-body">
+                <div class="card-title">Cholar Dal</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Bengal gram dal cooked with coconut and spices, a festive favorite.</div>
+                <a href="cholar-dal.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/Moong Dal.jpeg" alt="Moong Dal">
+            <div class="card-body">
+                <div class="card-title">Moong Dal</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Roasted yellow lentils cooked Bengali-style, light and nutritious.</div>
+                <a href="moong-dal.html" class="btn">Recipe</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--🥬 Snacks & Street Foodsstart -->
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🥬 Snacks & Street Food
+    </h2>
+    <!-- 🥬 Snacks & Street Foodend -->
+
+    <div class="container">
+        <div class="card">
+            <img class="big" src="./assets/shingara.jpeg" alt="Shingara">
+            <div class="card-body">
+                <div class="card-title">Shingara</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Bengali version of samosa, crispy pastry filled with spiced potatoes and
+                    vegetables.
+                </div>
+                <a href="shingara.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/beguni.jpeg" alt="Beguni">
+            <div class="card-body">
+                <div class="card-title">Beguni</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Eggplant slices dipped in gram flour batter and deep-fried till golden.</div>
+                <a href="beguni.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/Aloo Chop.jpeg" alt="Aloo Chop">
+            <div class="card-body">
+                <div class="card-title">Aloo Chop</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Spicy mashed potato balls coated in batter and deep-fried.</div>
+                <a href="aloo-chop.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="./assets/telebhaja.jpeg" alt="Telebhaja">
+            <div class="card-body">
+                <div class="card-title">Telebhaja</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Assorted deep-fried snacks like potato, pumpkin, or chili fritters.</div>
+                <a href="telebhaja.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="./assets/Ghugni.jpeg" alt="Ghugni">
+            <div class="card-body">
+                <div class="card-title">Ghugni</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Spicy yellow peas curry.</div>
+                <a href="ghugni.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--🍰 Sweets (Mishti)sstart -->
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🍰 Sweets (Mishti)
+    </h2>
+    <!--🍰 Sweets (Mishti)end -->
+
+    <div class="container">
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/rasgulla.jpeg" alt="Rasgulla">
+            <div class="card-body">
+                <div class="card-title">Rasgulla</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Soft cheese balls soaked in light sugar syrup, a Bengali classic sweet.</div>
+                <a href="rasgulla.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/sandesh.jpeg" alt="Sandesh">
+            <div class="card-body">
+                <div class="card-title">Sandesh</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Delicate sweet made from fresh paneer and sugar, often flavored with cardamom.
+                </div>
+                <a href="sandesh.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/mishti-doi.jpeg" alt="Mishti Doi">
+            <div class="card-body">
+                <div class="card-title">Mishti Doi</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Traditional Bengali sweetened yogurt, creamy and caramelized.</div>
+                <a href="mishti-doi.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/cham-cham.jpeg" alt="Cham Cham">
+            <div class="card-body">
+                <div class="card-title">Cham Cham</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Oval-shaped milk sweet, soft and juicy, sometimes garnished with coconut.</div>
+                <a href="cham-cham.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/pantua.jpeg" alt="Pantua">
+            <div class="card-body">
+                <div class="card-title">Pantua</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Bengali version of gulab jamun, deep-fried milk balls soaked in syrup.</div>
+                <a href="pantua.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/kacha-golla.jpeg" alt="Kacha Golla">
+            <div class="card-body">
+                <div class="card-title">Kacha Golla</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Soft and crumbly milk sweet, mildly sweetened and melt-in-mouth.</div>
+                <a href="kacha-golla.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="./assets/pati-shapta.jpeg" alt="Pati Shapta">
+            <div class="card-body">
+                <div class="card-title">Pati Shapta</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Rice flour pancakes filled with coconut and jaggery, a festive treat.</div>
+                <a href="pati-shapta.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="./assets/nolen.jpeg" alt="Nolen Gurer Payesh">
+            <div class="card-body">
+                <div class="card-title">Nolen Gurer Payesh</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Rice pudding made with date palm jaggery, rich and aromatic.</div>
+                <a href="nolen-gurer-payesh.html" class="btn">Recipe</a>
+            </div>
+        </div>
+    </div>
+     <footer class="footer">
+        &copy; 2025 Indian Recipe
+    </footer>
+</body>
+
+</html>
