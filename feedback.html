@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - Indian Recipes</title>
+    <link rel="stylesheet" href="feedback.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Feedback on Our Recipes</h1>
+        <p>We'd love to hear what you think!</p>
+    </header>
+
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="117692e0-7980-4f34-9eb6-b14baa705bb4">
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" name="feedback" placeholder="Share your thoughts on our Indian recipes..."
+                required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2025 Indian Spice Recipes. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>More Popular Recipes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ff8c42;
+        }
+
+        header {
+            background-color: #ff8c42;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff8c42;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(255, 140, 66, 0.10);
+            transition:
+                background 0.3s,
+                color 0.3s,
+                box-shadow 0.3s,
+                transform 0.2s;
+            cursor: pointer;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: #ffb26b;
+            color: #fff;
+            box-shadow: 0 6px 24px rgba(255, 140, 66, 0.25);
+            transform: translateY(-3px) scale(1.06);
+            text-decoration: none;
+            outline: none;
+        }
+
+        /* Styled button (no interaction) */
+        .main-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #ff8c42;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: default;
+            /* no pointer cursor since no JS */
+            width: max-content;
+            user-select: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Card styled as a button but actually a div */
+        .card {
+            background-color: rgb(238, 241, 186);
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card .big {
+            width: 350px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .card-body {
+            padding: 15px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #ff8c42;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #ff8c42;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .veg {
+            width: 30px;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>More Popular Recipes</h1>
+    </header>
+
+
+    <div class="container">
+        <!-- 50 recipe cards below -->
+        <!-- Just copy this block and change the number for each card -->
+
+        <div class="card">
+
+            <img class="big" src="./assets/Chole Bhature.jpg" />
+            <div class="card-body">
+                <div class="card-title">Chole Bhature </div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+
+                <div class="card-desc">Spicy chickpeas served with deep-fried, fluffy bread..</div>
+                <a href="10 popular recipe/Chole Bhature.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="big" src="./assets/palak panner.jpg" />
+            <div class="card-body">
+                <div class="card-title">Palak Paneer</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Creamy spinach curry with cubes of paneer (Indian cottage cheese)..</div>
+                <a href="10 popular recipe/Palak Paneer.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <!-- Repeat cards from 3 to 50 -->
+        <!-- I'll add all 50 cards here for you below -->
+
+        <!-- Cards 3 to 50 -->
+        <div class="card">
+            <img class="big" src="assets/dal tadka.jpg" />
+            <div class="card-body">
+                <div class="card-title">Dal Tadka</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Yellow lentils tempered with ghee, garlic, and spices—comfort food at its best.
+                </div>
+                <a href="10 popular recipe/Dal Tadka.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/aloo gobi.jpg" />
+            <div class="card-body">
+                <div class="card-title">Aloo Gobi</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Dry curry made with potatoes and cauliflower, seasoned with turmeric and cumin.
+                </div>
+                <a href="10 popular recipe/Aloo Gobi.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/rogan-josh.jpg" />
+            <div class="card-body">
+                <div class="card-title">Rogan Josh</div>
+                <img class="veg" src="assets/nonva.png" alt="veg">
+                <div class="card-desc">Kashmiri-style lamb curry with a deep red color and fragrant spices.</div>
+                <a href="10 popular recipe/Rogan Josh.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/Tandoori Chicken.jpg" />
+            <div class="card-body">
+                <div class="card-title">Tandoori Chicken</div>
+                <img class="veg" src="assets/nonva.png" alt="veg">
+                <div class="card-desc">Chicken marinated in yogurt and spices, cooked in a tandoor (clay oven) or
+                    grilled.</div>
+                <a href="10 popular recipe/Tandoori Chicken.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/rajma.jpg" />
+            <div class="card-body">
+                <div class="card-title">Rajma (Kidney Bean Curry)</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+
+                <div class="card-desc">Hearty and spicy red kidney bean curry often served with rice.</div>
+                <a href="10 popular recipe/Rajma.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/samosa.webp" />
+            <div class="card-body">
+                <div class="card-title">Samosa</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+
+                <div class="card-desc">Deep-fried pastry with a spicy potato and pea filling.</div>
+                <a href="10 popular recipe/Samosa.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/pav bhaji.jpg" />
+            <div class="card-body">
+                <div class="card-title">Pav Bhaji</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+
+                <div class="card-desc">Mumbai street food: spiced mashed vegetables served with butter-toasted buns.
+                </div>
+                <a href="10 popular recipe/pavbhaji.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="big" src="assets/Gulab-Jamun.jpg" />
+            <div class=" card-body">
+                <div class="card-title">Gulab Jamun</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+
+                <div class="card-desc">Soft milk-solid balls soaked in saffron and cardamom sugar syrup.</div>
+                <a href="10 popular recipe/Gulab Jamun.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+    </div>
+    <ul class="footer">
+        <p>&copy; 2025 Indian Recipe All rights reserved.</p>
+        <p style="font-family:'Courier New', Courier, monospace ;">Designed and developed by [Mistry udit R. & Verma
+            krunal M.]</p>
+    </ul>
+
+</body>
+
+</html>

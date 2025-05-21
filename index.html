@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeShare - Share Your Flavor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="icon.jpeg">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="logo">🍲</div>
+        <div class="h1"> Indian Recipe</div>
+        <br>
+        <nav>
+            <ul class="links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="#recipes">Popular Recipes</a></li>
+                <li class="link"><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Search for a recipe..." autocomplete="off">
+        <div class="suggestions" id="suggestions"></div>
+    </div>
+
+
+    <!-- header end -->
+    <!-- hero start -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Delicious Recipes</h1>
+            <p>See a Food Recipes for food lovers.favorite recipes and explore new ones every day.</p>
+            <!-- pending  link-->
+            <a href="getst.html" class="btn">Get Started</a>
+        </div>
+    </section>
+    <!-- hero end -->
+    <!-- features start -->
+
+    <section id="features" class="features">
+        <h2>Why Indian Recipe?</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Easy to Use</h3>
+                <p>browse recipes with just a few clicks.</p>
+            </div>
+            <div class="card">
+                <h3>Authentic Flavors</h3>
+                <p>Discover traditional and modern Indian recipes.</p>
+            </div>
+            <div class="card">
+                <h3>Daily Inspiration</h3>
+                <p>New recipes every day to spice up your meals.</p>
+            </div>
+        </div>
+    </section>
+    <!-- features end -->
+    <!-- recies start -->
+
+    <section id="recipes" class="recipes">
+        <h2>Popular Recipes</h2>
+        <div class="recipe-list">
+            <div class="recipe-card">
+                <img src="assets/Biryani.jpeg">
+                <h3>Biryani</h3>
+                <a href="./ALL POPULER RECIPY'S/biryani.html" class="btn">Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="assets/Masala Dosa.jpeg" alt="Pancakes">
+                <h3> Masala Dosa</h3>
+                <a href="./ALL POPULER RECIPY'S/masala dosa.html" class="btn">Recipe</a>
+
+            </div>
+            <div class="recipe-card">
+                <img src="assets/Paneer Butter Masala.jpg">
+                <h3>Paneer Butter Masala</h3>
+                <a href="./ALL POPULER RECIPY'S/PaneerButterMasala.html" class="btn">Recipe</a>
+
+            </div>
+        </div>
+        <a href="mainpopuler.html" class="btn">View more</a>
+    </section>
+    <!-- recies end -->
+    <!-- footer start -->
+    <footer id="footer" class="footer">
+        <div class="footer-column">
+            <p>About us</p>
+            <hr>
+            <p>
+                Our website is dedicated to bringing you the best of Indian cuisine. Explore authentic recipes, discover
+                new flavors.
+                <hr>
+            <p class="social">Social Media</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/indian_recipe.12?igsh=MTN5b2VybHlqYXRlYg== "><img
+                        src="assets/instragram.png" alt=""></a>
+                <a href="https://www.facebook.com/share/1GSfKFHLdX/"><img src="assets/facebook.png" alt=""></a>
+            </div>
+            <br>
+            <p>
+                Office Address: 35/137 ,2nd Floor Shreenagar,Gandhinagar
+                ,Gujarat,India
+                <br>
+                <br>
+
+            </p>
+            <p>
+                Email : recipeindian23@gmail.com
+                <br>
+                Mobile No :+91 7874848643
+                <br>
+                Mobile No :+91 9725162103
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <p>Discover</p>
+            <hr>
+            <a href="PopularRecipes.html">Popular Recipes</a>
+            <br>
+            <a href="feedback.html">feedback</a>
+            <br>
+
+            <br>
+            <!-- add a buy kits's and plant page -->
+
+        </div>
+
+        <div class="footer-column">
+            <p>Suggestion</p>
+            <hr>
+            <h5>Food Name</h5>
+            <h5>Food Items</h5>
+            <h5>Food Recipe Video</h5>
+            <h5>Food Instructions</h5>
+
+
+        </div>
+
+        <div class="footer-column contact-form">
+            <p>For Suggestion Of Food Contact us</p>
+            <hr>
+            <br>
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="117692e0-7980-4f34-9eb6-b14baa705bb4">
+
+                <input type="text" name="NAME" required placeholder="Food Name">
+
+                <textarea type="ITEMS'S" name="ITEMS'S" required placeholder="Enter Your Food Items"></textarea>
+
+
+
+                <select class="form_section  Form_text_sizing" type="text" name="Category" class="form_section "
+                    required>
+                    <option value="" disabled selected>Select Your Food Category :</option>
+                    <option> VEG:</option>
+                    <option> NON-VEG:</option>
+
+                </select>
+                <button>Send</button>
+            </form>
+
+
+        </div>
+
+    </footer>
+    <ul class="copyright">
+        <p>&copy; 2025 Indian Recipe All rights reserved.</p>
+        <p style="font-family:'Courier New', Courier, monospace ;">Designed and developed by [Mistry udit R. & Verma
+            krunal M.]</p>
+    </ul>
+
+    <!-- footer end -->
+    <script src="search.js"></script>
+
+</html>
