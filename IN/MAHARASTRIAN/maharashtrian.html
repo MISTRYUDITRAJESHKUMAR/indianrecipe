@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maharashtrian Recipes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ff8c42;
+        }
+
+        header {
+            background-color: #ff8c42;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff8c42;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(255, 140, 66, 0.10);
+            transition:
+                background 0.3s,
+                color 0.3s,
+                box-shadow 0.3s,
+                transform 0.2s;
+            cursor: pointer;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: #ffb26b;
+            color: #fff;
+            box-shadow: 0 6px 24px rgba(255, 140, 66, 0.25);
+            transform: translateY(-3px) scale(1.06);
+            text-decoration: none;
+            outline: none;
+        }
+
+        /* Styled button (no interaction) */
+        .main-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #ff8c42;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: default;
+            /* no pointer cursor since no JS */
+            width: max-content;
+            user-select: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Card styled as a button but actually a div */
+        .card {
+            background-color: white;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card .big {
+            width: 255px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+
+        }
+
+        .card-body {
+            padding: 15px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #ff8c42;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #ff8c42;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .veg {
+            width: 30px;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>All Maharashtrian Food Recipes</h1>
+    </header>
+
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🥘 Vegetarian Dishes
+    </h2>
+    <div class="container">
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/puran-poli.jpeg" alt="Puran Poli">
+            <div class="card-body">
+                <div class="card-title">Puran Poli</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Sweet flatbread stuffed with jaggery and chana dal mixture.</div>
+                <a href="puran-poli.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="assets/Misal Pav.jpeg" alt="Misal Pav">
+            <div class="card-body">
+                <div class="card-title">Misal Pav</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Spicy curry made of sprouted moth beans, topped with farsan, served with bread.
+                </div>
+                <a href="misal-pav.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/poha.jpeg" alt="Poha">
+            <div class="card-body">
+                <div class="card-title">Poha</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Flattened rice sautéed with mustard seeds, turmeric, green chilies, and onions.
+                </div>
+                <a href="poha.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;
+            " class="big" src="assets/Sabudana Khichdi.jpeg" alt="Sabudana Khichdi">
+            <div class="card-body">
+                <div class="card-title">Sabudana Khichdi</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Tapioca pearls cooked with peanuts, cumin, and potatoes, usually during fasts.
+                </div>
+                <a href="sabudana-khichdi.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Vada Pav.jpeg" alt="Vada Pav">
+            <div class="card-body">
+                <div class="card-title">Vada Pav</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">The iconic Mumbai street food; a spicy potato patty in a bun with chutneys.</div>
+                <a href="vada-pav.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="big" src="assets/Thalipeeth.jpeg" alt="Thalipeeth">
+            <div class="card-body">
+                <div class="card-title">Thalipeeth</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Multigrain savory pancake with spices and sometimes chopped onions.</div>
+                <a href="thalipeeth.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Zunka Bhakri.jpeg" alt="Zunka Bhakri">
+            <div class="card-body">
+                <div class="card-title">Zunka Bhakri</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Dry spicy besan (gram flour) dish served with millet bread (bhakri).</div>
+                <a href="zunka-bhakri.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/bharli-vangi.jpeg" alt="Bharli Vangi">
+            <div class="card-body">
+                <div class="card-title">Bharli Vangi</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Stuffed eggplants cooked in a peanut, sesame, and coconut masala.</div>
+                <a href="bharli-vangi.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Kanda Bhaji.jpeg" alt="Kanda Bhaji">
+            <div class="card-body">
+                <div class="card-title">Kanda Bhaji</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Onion fritters deep-fried in chickpea flour batter.</div>
+                <a href="kanda-bhaji.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Batata Bhaji.jpeg" alt="Batata Bhaji">
+            <div class="card-body">
+                <div class="card-title">Batata Bhaji</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Stir-fried spiced potatoes, often served with puris or in vada pav.</div>
+                <a href="batata-bhaji.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+    </div>
+
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🍗 Non-Vegetarian Dishes
+    </h2>
+
+
+    <div class="container">
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="assets/kolambi-bhaat.jpeg" alt="Kolambi Bhaat">
+            <div class="card-body">
+                <div class="card-title">Kolambi Bhaat</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Prawn rice dish flavored with coastal spices.</div>
+                <a href="kolambi-bhaat.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Chicken Rassa.jpeg" alt="Chicken Rassa">
+            <div class="card-body">
+                <div class="card-title">Chicken Rassa</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Thin, spicy chicken curry, typically from Kolhapur or Nagpur.</div>
+                <a href="chicken-rassa.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto; height: auto;" class="big" src="assets/mutton-sukka.jpeg" alt="Mutton Sukka">
+            <div class="card-body">
+                <div class="card-title">Mutton Sukka</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Dry-style goat meat cooked with spices and coconut.</div>
+                <a href="mutton-sukka.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Bombil Fry.jpeg" alt="Bombil Fry">
+            <div class="card-body">
+                <div class="card-title">Bombil Fry</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Crispy fried Bombay duck fish, a specialty along the Konkan coast.</div>
+                <a href="bombil-fry.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Tambda Rassa.jpeg" alt="Tambda Rassa">
+            <div class="card-body">
+                <div class="card-title">Tambda Rassa</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Fiery red mutton curry from Kolhapur.</div>
+                <a href="tambda-rassa.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Pandhra Rassa.jpeg" alt="Pandhra Rassa">
+            <div class="card-body">
+                <div class="card-title">Pandhra Rassa</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Creamy white mutton curry with coconut and spices.</div>
+                <a href="pandhra-rassa.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Chicken Malvani.jpeg" alt="Chicken Malvani">
+            <div class="card-body">
+                <div class="card-title">Chicken Malvani</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Coastal chicken curry with coconut, red chilies, and garam masala.</div>
+                <a href="chicken-malvani.html" class="btn">Recipe</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Egg Curry.jpeg" alt="Egg Curry">
+            <div class="card-body">
+                <div class="card-title">Egg Curry</div>
+                <img class="veg" src="assets/nonva.png" alt="non-veg">
+                <div class="card-desc">Hard-boiled eggs in a spicy, coconut-based curry.</div>
+                <a href="egg-curry.html" class="btn">Recipe</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h2
+        style="font-size: 2rem; color: #ff8c42; margin-bottom: 24px; font-family: 'Tilt Neon', cursive, sans-serif; text-align: center;">
+        🍬 Sweets & Snacks
+    </h2>
+
+    <div class="container">
+        <div class="card">
+            <img class="big" src="assets/modak.jpeg" alt="Modak">
+            <div class="card-body">
+                <div class="card-title">Modak</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Steamed or fried dumplings filled with coconut and jaggery; offered to Lord
+                    Ganesha.</div>
+                <a href="modak.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Shreekhand.jpeg" alt="Shreekhand">
+            <div class="card-body">
+                <div class="card-title">Shreekhand</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Sweet strained yogurt flavored with cardamom and saffron.</div>
+                <a href="shreekhand.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/kharvas.jpeg" alt="Kharvas">
+            <div class="card-body">
+                <div class="card-title">Kharvas</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Delicate milk pudding made from colostrum milk.</div>
+                <a href="kharvas.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img  style="width: auto;" class="big" src="assets/gulachi-poli.jpeg" alt="Gulachi Poli">
+            <div class="card-body">
+                <div class="card-title">Gulachi Poli</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Jaggery-stuffed flatbread, commonly prepared during winters.</div>
+                <a href="gulachi-poli.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/anarsa.jpeg" alt="Anarsa">
+            <div class="card-body">
+                <div class="card-title">Anarsa</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Rice flour and jaggery sweet fried and coated with poppy seeds.</div>
+                <a href="anarsa.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Chakli.jpeg" alt="Chakli">
+            <div class="card-body">
+                <div class="card-title">Chakli</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Spiral-shaped, crunchy snack made with spiced rice flour.</div>
+                <a href="chakli.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Bhakarwadi.jpeg" alt="Bhakarwadi">
+            <div class="card-body">
+                <div class="card-title">Bhakarwadi</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Rolled, spicy-sweet snack with a filling of coconut, poppy seeds, and spices.
+                </div>
+                <a href="bhakarwadi.html" class="btn">Recipe</a>
+            </div>
+        </div>
+        <div class="card">
+            <img style="width: auto;" class="big" src="assets/Sheera.jpeg" alt="Sheera">
+            <div class="card-body">
+                <div class="card-title">Sheera</div>
+                <img class="veg" src="assets/veg.jpeg" alt="veg">
+                <div class="card-desc">Semolina pudding cooked with ghee, sugar, and cardamom.</div>
+                <a href="sheera.html" class="btn">Recipe</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Indian Recipe
+    </footer>
+</body>
+
+</html>
