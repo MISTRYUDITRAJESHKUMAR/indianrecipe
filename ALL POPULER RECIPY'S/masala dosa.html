@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masala Dosa Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 32px auto 32px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+            padding: 32px 24px 24px 24px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d2691e;
+            margin-bottom: 12px;
+        }
+
+        .hero-image {
+            display: block;
+            margin: 0 auto 24px auto;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: #b34700;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            color: #ff6600;
+            margin-bottom: 6px;
+        }
+
+        ul,
+        ol {
+            margin-top: 0;
+            margin-bottom: 12px;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        .note {
+            background: #fff3cd;
+            color: #856404;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 18px 0;
+            font-size: 1rem;
+            border-left: 5px solid #ffb300;
+        }
+
+        .lang-btn {
+            position: fixed;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 24px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            transition: background 0.2s;
+        }
+
+        .lang-btn:hover {
+            background: #cc5200;
+        }
+
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 12px 4vw 16px 4vw;
+            }
+
+            .hero-image {
+                max-width: 98vw;
+            }
+
+            .lang-btn {
+                font-size: 0.95rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button id="langSwitch" class="lang-btn">हिन्दी में देखें</button>
+    <div class="container" id="recipeContent">
+        <h1 id="title">🥔 Masala Dosa Recipe</h1>
+        <img src="../assets/Masala Dosa.jpeg" alt="Masala Dosa" class="hero-image" />
+
+        <div class="section" id="ingredientsSection">
+            <h2 id="ingredientsTitle">Ingredients</h2>
+            <h3 id="batterTitle">For Dosa Batter:</h3>
+            <ul id="batterList">
+                <li>2 cups rice</li>
+                <li>½ cup urad dal (split black gram)</li>
+                <li>½ tsp fenugreek seeds</li>
+                <li>Salt to taste</li>
+                <li>Water for soaking and grinding</li>
+            </ul>
+            <h3 id="masalaTitle">For Potato Masala (Filling):</h3>
+            <ul id="masalaList">
+                <li>3–4 boiled potatoes</li>
+                <li>1 onion, thinly sliced</li>
+                <li>1–2 green chilies, chopped</li>
+                <li>1 tsp mustard seeds</li>
+                <li>½ tsp turmeric powder</li>
+                <li>8–10 curry leaves</li>
+                <li>Salt to taste</li>
+                <li>2 tsp oil</li>
+            </ul>
+        </div>
+
+        <div class="section" id="instructionsSection">
+            <h2 id="instructionsTitle">Instructions</h2>
+            <h3 id="step1Title">Step 1: Prepare the Batter</h3>
+            <ol id="step1List">
+                <li>Soak rice, urad dal, and fenugreek seeds in water for 4–6 hours.</li>
+                <li>Grind to a smooth batter, add salt, and let it ferment overnight or 8–12 hours.</li>
+            </ol>
+            <h3 id="step2Title">Step 2: Make the Potato Masala</h3>
+            <ol id="step2List">
+                <li>Heat oil, add mustard seeds, curry leaves, and green chilies.</li>
+                <li>Add onions and sauté till soft. Add turmeric.</li>
+                <li>Mash boiled potatoes and add to the pan. Mix well with salt.</li>
+                <li>Cook for 3–5 minutes and keep aside.</li>
+            </ol>
+            <h3 id="step3Title">Step 3: Make the Dosa</h3>
+            <ol id="step3List">
+                <li>Heat a non-stick tawa or iron skillet. Grease lightly.</li>
+                <li>Pour a ladle of batter and spread into a thin circle.</li>
+                <li>Drizzle some oil around edges and cook until golden brown.</li>
+                <li>Place some potato masala in the center and fold the dosa.</li>
+            </ol>
+        </div>
+
+        <div class="section" id="serveSection">
+            <h2 id="serveTitle">Serve With</h2>
+            <ul id="serveList">
+                <li>Coconut chutney</li>
+                <li>Sambar</li>
+                <li>Tomato chutney</li>
+            </ul>
+        </div>
+
+        <div class="note" id="tipNote">
+            🔥 <strong>Tip:</strong> For crisp dosas, the pan should be hot but not smoking. Wipe with a wet cloth
+            between dosas.
+        </div>
+        <!-- video html -->
+        <div class="section" id="videoSection">
+            <h2 id="videoTitle">Watch Video Suggestions</h2>
+            <iframe id="biryaniVideo" class="video-frame" width="100%" height="315"
+                src="https://www.youtube.com/embed/PFG1aeYgi7c?si=FuaOBhmTJWt35DHK" title="Chicken Biryani Recipe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <div style="margin-top: 18px; text-align: center;">
+                <button id="toggleIngredients" class="custom-btn" style="background: #ff6600;">
+                    Hide Ingredients
+                </button>
+                <button id="printRecipe" class="custom-btn" style="background: #cc5200; margin-left: 10px;">
+                    Print Recipe
+                </button>
+            </div>
+        </div>
+    </div>
+    <style>
+        .video-frame {
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            border: none;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: background 0.2s;
+        }
+
+        .custom-btn:hover {
+            filter: brightness(0.95);
+        }
+    </style>
+    <!-- video -->
+    <script>
+
+        // Toggle Ingredients Section
+        const toggleBtn = document.getElementById('toggleIngredients');
+        const ingredientsSection = document.getElementById('ingredientsSection');
+        let shown = true;
+        toggleBtn.onclick = function () {
+            shown = !shown;
+            ingredientsSection.style.display = shown ? '' : 'none';
+            const d = langData[currentLang];
+            toggleBtn.textContent = shown ? d.toggleIngredients : d.showIngredients;
+        };
+
+        // Print Recipe
+        document.getElementById('printRecipe').onclick = function () {
+            window.print();
+        };
+    </script>
+    <!-- language -->
+    <script>
+        window.onload = function () {
+            // Language Data
+            const langData = {
+                en: {
+                    btn: "हिन्दी में देखें",
+                    title: "🥔 Masala Dosa Recipe",
+                    ingredientsTitle: "Ingredients",
+                    batterTitle: "For Dosa Batter:",
+                    batterList: [
+                        "2 cups rice",
+                        "½ cup urad dal (split black gram)",
+                        "½ tsp fenugreek seeds",
+                        "Salt to taste",
+                        "Water for soaking and grinding"
+                    ],
+                    masalaTitle: "For Potato Masala (Filling):",
+                    masalaList: [
+                        "3–4 boiled potatoes",
+                        "1 onion, thinly sliced",
+                        "1–2 green chilies, chopped",
+                        "1 tsp mustard seeds",
+                        "½ tsp turmeric powder",
+                        "8–10 curry leaves",
+                        "Salt to taste",
+                        "2 tsp oil"
+                    ],
+                    instructionsTitle: "Instructions",
+                    step1Title: "Step 1: Prepare the Batter",
+                    step1List: [
+                        "Soak rice, urad dal, and fenugreek seeds in water for 4–6 hours.",
+                        "Grind to a smooth batter, add salt, and let it ferment overnight or 8–12 hours."
+                    ],
+                    step2Title: "Step 2: Make the Potato Masala",
+                    step2List: [
+                        "Heat oil, add mustard seeds, curry leaves, and green chilies.",
+                        "Add onions and sauté till soft. Add turmeric.",
+                        "Mash boiled potatoes and add to the pan. Mix well with salt.",
+                        "Cook for 3–5 minutes and keep aside."
+                    ],
+                    step3Title: "Step 3: Make the Dosa",
+                    step3List: [
+                        "Heat a non-stick tawa or iron skillet. Grease lightly.",
+                        "Pour a ladle of batter and spread into a thin circle.",
+                        "Drizzle some oil around edges and cook until golden brown.",
+                        "Place some potato masala in the center and fold the dosa."
+                    ],
+                    serveTitle: "Serve With",
+                    serveList: [
+                        "Coconut chutney",
+                        "Sambar",
+                        "Tomato chutney"
+                    ],
+                    tipNote: '🔥 <strong>Tip:</strong> For crisp dosas, the pan should be hot but not smoking. Wipe with a wet cloth between dosas.',
+                    videoTitle: "Watch Video Suggestions",
+                    toggleIngredients: "Hide Ingredients",
+                    showIngredients: "Show Ingredients",
+                    printRecipe: "Print Recipe"
+                },
+                hi: {
+                    btn: "View in English",
+                    title: "🥔 मसाला डोसा रेसिपी",
+                    ingredientsTitle: "सामग्री",
+                    batterTitle: "डोसा बैटर के लिए:",
+                    batterList: [
+                        "2 कप चावल",
+                        "½ कप उड़द दाल",
+                        "½ छोटा चम्मच मेथी दाना",
+                        "स्वादानुसार नमक",
+                        "भिगोने और पीसने के लिए पानी"
+                    ],
+                    masalaTitle: "आलू मसाला (भरावन) के लिए:",
+                    masalaList: [
+                        "3–4 उबले हुए आलू",
+                        "1 प्याज, पतला कटा हुआ",
+                        "1–2 हरी मिर्च, कटी हुई",
+                        "1 छोटा चम्मच राई",
+                        "½ छोटा चम्मच हल्दी पाउडर",
+                        "8–10 करी पत्ते",
+                        "स्वादानुसार नमक",
+                        "2 छोटा चम्मच तेल"
+                    ],
+                    instructionsTitle: "निर्देश",
+                    step1Title: "चरण 1: बैटर तैयार करें",
+                    step1List: [
+                        "चावल, उड़द दाल और मेथी दाना को 4–6 घंटे पानी में भिगो दें।",
+                        "पीसकर मुलायम बैटर बनाएं, नमक डालें और रातभर या 8–12 घंटे के लिए खमीर उठने दें।"
+                    ],
+                    step2Title: "चरण 2: आलू मसाला बनाएं",
+                    step2List: [
+                        "तेल गरम करें, उसमें राई, करी पत्ता और हरी मिर्च डालें।",
+                        "प्याज डालकर नरम होने तक भूनें। हल्दी डालें।",
+                        "उबले आलू मैश करके डालें, नमक डालकर अच्छी तरह मिलाएं।",
+                        "3–5 मिनट पकाएं और अलग रख दें।"
+                    ],
+                    step3Title: "चरण 3: डोसा बनाएं",
+                    step3List: [
+                        "नॉन-स्टिक तवा या लोहे की तवा गरम करें। हल्का सा तेल लगाएं।",
+                        "एक कलछी बैटर डालें और पतला फैलाएं।",
+                        "किनारों पर थोड़ा तेल डालें और सुनहरा होने तक सेंकें।",
+                        "बीच में आलू मसाला रखें और डोसा मोड़ दें।"
+                    ],
+                    serveTitle: "साथ में परोसें",
+                    serveList: [
+                        "नारियल चटनी",
+                        "सांभर",
+                        "टमाटर चटनी"
+                    ],
+                    tipNote: '🔥 <strong>टिप:</strong> कुरकुरा डोसा बनाने के लिए तवा गरम होना चाहिए, लेकिन धुआं न निकले। हर डोसे के बाद तवा गीले कपड़े से पोंछें।',
+                    videoTitle: "वीडियो सुझाव देखें",
+                    toggleIngredients: "सामग्री छुपाएँ",
+                    showIngredients: "सामग्री दिखाएँ",
+                    printRecipe: "रेसिपी प्रिंट करें"
+                }
+            };
+
+            let currentLang = "en";
+            const $ = id => document.getElementById(id);
+
+            function setLang(lang) {
+                const d = langData[lang];
+                $("langSwitch").textContent = d.btn;
+                $("title").textContent = d.title;
+                $("ingredientsTitle").textContent = d.ingredientsTitle;
+                $("batterTitle").textContent = d.batterTitle;
+                $("masalaTitle").textContent = d.masalaTitle;
+                $("instructionsTitle").textContent = d.instructionsTitle;
+                $("step1Title").textContent = d.step1Title;
+                $("step2Title").textContent = d.step2Title;
+                $("step3Title").textContent = d.step3Title;
+                $("serveTitle").textContent = d.serveTitle;
+                $("videoTitle").textContent = d.videoTitle;
+                $("tipNote").innerHTML = d.tipNote;
+
+                // Update lists
+                function setList(id, arr) {
+                    const ul = $(id);
+                    ul.innerHTML = "";
+                    arr.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+                }
+                setList("batterList", d.batterList);
+                setList("masalaList", d.masalaList);
+                setList("step1List", d.step1List);
+                setList("step2List", d.step2List);
+                setList("step3List", d.step3List);
+                setList("serveList", d.serveList);
+
+                // Update buttons
+                toggleBtn.textContent = shown ? d.toggleIngredients : d.showIngredients;
+                $("printRecipe").textContent = d.printRecipe;
+            }
+
+
+            $("langSwitch").onclick = function () {
+                currentLang = currentLang === "en" ? "hi" : "en";
+                setLang(currentLang);
+            };
+
+            setLang(currentLang);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Biryani Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff5e6;
+            margin: 0;
+            padding: 0;
+            color: #4d2600;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        .hero-image {
+            border-radius: 12px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 170px;
+            object-fit: cover;
+        }
+        h2 {
+            color: #cc5200;
+            margin-top: 30px;
+        }
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        .note {
+            background-color: #fff0e0;
+            border-left: 6px solid #ff9933;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .lang-btn {
+            position: fixed;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 24px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            transition: background 0.2s;
+        }
+        .lang-btn:hover {
+            background: #cc5200;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .lang-btn {
+                font-size: 0.95rem;
+                padding: 8px 16px;
+            }
+        }
+        .video-frame {
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            border: none;
+            margin-top: 10px;
+        }
+        .custom-btn {
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s;
+        }
+        .custom-btn:hover {
+            filter: brightness(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="langSwitch" class="lang-btn">हिन्दी में देखें</button>
+    <div class="container">
+        <h1 id="title">🍗 Chicken Biryani Recipe</h1>
+        <img src="../assets/Biryani.jpeg" class="hero-image" alt="Chicken Biryani">
+
+        <div class="section" id="ingredientsSection">
+            <h2 id="ingredientsTitle">Ingredients</h2>
+            <h3 id="riceTitle">For Rice:</h3>
+            <ul id="riceList">
+                <li>2 cups basmati rice</li>
+                <li>1 bay leaf, 4 green cardamoms, 4 cloves, 1 cinnamon stick</li>
+                <li>Salt to taste</li>
+            </ul>
+            <h3 id="marinadeTitle">For Chicken Marinade:</h3>
+            <ul id="marinadeList">
+                <li>500g chicken (cut into pieces)</li>
+                <li>1 cup yogurt</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 tsp red chili powder</li>
+                <li>½ tsp turmeric</li>
+                <li>1 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>Juice of ½ lemon</li>
+            </ul>
+            <h3 id="biryaniTitle">For Biryani:</h3>
+            <ul id="biryaniList">
+                <li>2 large onions, thinly sliced</li>
+                <li>2–3 tbsp oil or ghee</li>
+                <li>1–2 green chilies (slit)</li>
+                <li>A handful of mint and coriander leaves</li>
+                <li>Saffron soaked in 2 tbsp warm milk (optional)</li>
+                <li>2 tbsp rose or kewra water (optional)</li>
+            </ul>
+        </div>
+
+        <div class="section" id="instructionsSection">
+            <h2 id="instructionsTitle">Instructions</h2>
+            <ol id="instructionsList">
+                <li>Marinate the chicken with yogurt, spices, and lemon. Let it sit for at least 1 hour.</li>
+                <li>Boil soaked rice with whole spices until 80% cooked. Drain and keep aside.</li>
+                <li>Fry onions until golden brown. Set half aside for garnishing.</li>
+                <li>Cook the marinated chicken until tender and oil separates.</li>
+                <li>Layer chicken and rice in a pot, topping each layer with herbs, fried onions, and saffron milk.</li>
+                <li>Cover and cook on low heat for 20–25 minutes or bake at 180°C for 25 minutes.</li>
+            </ol>
+        </div>
+
+        <div class="section" id="serveSection">
+            <h2 id="serveTitle">Serve With</h2>
+            <ul id="serveList">
+                <li>Raita (yogurt with cucumber/onion)</li>
+                <li>Boiled eggs</li>
+                <li>Salad</li>
+                <li>Pickles or papad</li>
+            </ul>
+        </div>
+
+        <div class="note" id="tipNote">
+            💡 <strong>Tip:</strong> For extra flavor, marinate the chicken overnight!
+        </div>
+        
+        <div class="section" id="videoSection">
+            <h2 id="videoTitle">Watch Video For Suggestions</h2>
+            <iframe id="biryaniVideo" class="video-frame" width="100%" height="315" src="https://www.youtube.com/embed/uygb9O-MDPw?si=-STPQJ7cecSBy-ap"
+                title="Chicken Biryani Recipe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <div style="margin-top: 18px; text-align: center;">
+                <button id="toggleIngredients" class="custom-btn" style="background: #ff6600;">
+                    Hide Ingredients
+                </button>
+                <button id="printRecipe" class="custom-btn" style="background: #cc5200; margin-left: 10px;">
+                    Print Recipe
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Language Data
+        const langData = {
+            en: {
+                btn: "हिन्दी में देखें",
+                title: "🍗 Chicken Biryani Recipe",
+                ingredientsTitle: "Ingredients",
+                riceTitle: "For Rice:",
+                riceList: [
+                    "2 cups basmati rice",
+                    "1 bay leaf, 4 green cardamoms, 4 cloves, 1 cinnamon stick",
+                    "Salt to taste"
+                ],
+                marinadeTitle: "For Chicken Marinade:",
+                marinadeList: [
+                    "500g chicken (cut into pieces)",
+                    "1 cup yogurt",
+                    "1 tbsp ginger-garlic paste",
+                    "1 tsp red chili powder",
+                    "½ tsp turmeric",
+                    "1 tsp garam masala",
+                    "Salt to taste",
+                    "Juice of ½ lemon"
+                ],
+                biryaniTitle: "For Biryani:",
+                biryaniList: [
+                    "2 large onions, thinly sliced",
+                    "2–3 tbsp oil or ghee",
+                    "1–2 green chilies (slit)",
+                    "A handful of mint and coriander leaves",
+                    "Saffron soaked in 2 tbsp warm milk (optional)",
+                    "2 tbsp rose or kewra water (optional)"
+                ],
+                instructionsTitle: "Instructions",
+                instructionsList: [
+                    "Marinate the chicken with yogurt, spices, and lemon. Let it sit for at least 1 hour.",
+                    "Boil soaked rice with whole spices until 80% cooked. Drain and keep aside.",
+                    "Fry onions until golden brown. Set half aside for garnishing.",
+                    "Cook the marinated chicken until tender and oil separates.",
+                    "Layer chicken and rice in a pot, topping each layer with herbs, fried onions, and saffron milk.",
+                    "Cover and cook on low heat for 20–25 minutes or bake at 180°C for 25 minutes."
+                ],
+                serveTitle: "Serve With",
+                serveList: [
+                    "Raita (yogurt with cucumber/onion)",
+                    "Boiled eggs",
+                    "Salad",
+                    "Pickles or papad"
+                ],
+                tipNote: '💡 <strong>Tip:</strong> For extra flavor, marinate the chicken overnight!',
+                videoTitle: "Watch Video For Suggestions",
+                toggleIngredients: "Hide Ingredients",
+                showIngredients: "Show Ingredients",
+                printRecipe: "Print Recipe"
+            },
+            hi: {
+                btn: "View in English",
+                title: "🍗 चिकन बिरयानी रेसिपी",
+                ingredientsTitle: "सामग्री",
+                riceTitle: "चावल के लिए:",
+                riceList: [
+                    "2 कप बासमती चावल",
+                    "1 तेजपत्ता, 4 हरी इलायची, 4 लौंग, 1 दालचीनी स्टिक",
+                    "स्वादानुसार नमक"
+                ],
+                marinadeTitle: "चिकन मैरिनेशन के लिए:",
+                marinadeList: [
+                    "500 ग्राम चिकन (टुकड़ों में कटा हुआ)",
+                    "1 कप दही",
+                    "1 बड़ा चम्मच अदरक-लहसुन पेस्ट",
+                    "1 छोटा चम्मच लाल मिर्च पाउडर",
+                    "½ छोटा चम्मच हल्दी",
+                    "1 छोटा चम्मच गरम मसाला",
+                    "स्वादानुसार नमक",
+                    "½ नींबू का रस"
+                ],
+                biryaniTitle: "बिरयानी के लिए:",
+                biryaniList: [
+                    "2 बड़े प्याज, पतले कटे हुए",
+                    "2–3 बड़े चम्मच तेल या घी",
+                    "1–2 हरी मिर्च (चीरी हुई)",
+                    "एक मुट्ठी पुदीना और धनिया पत्ते",
+                    "2 बड़े चम्मच गर्म दूध में भीगा केसर (वैकल्पिक)",
+                    "2 बड़े चम्मच गुलाब या केवड़ा जल (वैकल्पिक)"
+                ],
+                instructionsTitle: "निर्देश",
+                instructionsList: [
+                    "चिकन को दही, मसालों और नींबू के रस के साथ मैरीनेट करें। कम से कम 1 घंटे के लिए रखें।",
+                    "चावल को साबुत मसालों के साथ 80% तक उबालें। छानकर अलग रखें।",
+                    "प्याज को सुनहरा भूरा होने तक तलें। आधा प्याज गार्निश के लिए अलग रखें।",
+                    "मैरीनेटेड चिकन को नरम और तेल अलग होने तक पकाएं।",
+                    "एक बर्तन में चिकन और चावल की परतें लगाएं, हर परत पर हर्ब्स, तला प्याज और केसर दूध डालें।",
+                    "ढककर धीमी आंच पर 20–25 मिनट पकाएं या 180°C पर 25 मिनट बेक करें।"
+                ],
+                serveTitle: "साथ में परोसें",
+                serveList: [
+                    "रायता (दही, खीरा/प्याज के साथ)",
+                    "उबले अंडे",
+                    "सलाद",
+                    "अचार या पापड़"
+                ],
+                tipNote: '💡 <strong>टिप:</strong> ज्यादा स्वाद के लिए चिकन को रातभर मैरीनेट करें!',
+                videoTitle: "वीडियो सुझाव देखें",
+                toggleIngredients: "सामग्री छुपाएँ",
+                showIngredients: "सामग्री दिखाएँ",
+                printRecipe: "रेसिपी प्रिंट करें"
+            }
+        };
+
+        let currentLang = "en";
+        const $ = id => document.getElementById(id);
+
+        function setLang(lang) {
+            const d = langData[lang];
+            $("langSwitch").textContent = d.btn;
+            $("title").textContent = d.title;
+            $("ingredientsTitle").textContent = d.ingredientsTitle;
+            $("riceTitle").textContent = d.riceTitle;
+            $("marinadeTitle").textContent = d.marinadeTitle;
+            $("biryaniTitle").textContent = d.biryaniTitle;
+            $("instructionsTitle").textContent = d.instructionsTitle;
+            $("serveTitle").textContent = d.serveTitle;
+            $("videoTitle").textContent = d.videoTitle;
+            $("tipNote").innerHTML = d.tipNote;
+
+            // Update lists
+            function setList(id, arr) {
+                const ul = $(id);
+                ul.innerHTML = "";
+                arr.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    ul.appendChild(li);
+                });
+            }
+            setList("riceList", d.riceList);
+            setList("marinadeList", d.marinadeList);
+            setList("biryaniList", d.biryaniList);
+            setList("instructionsList", d.instructionsList);
+            setList("serveList", d.serveList);
+
+            // Update buttons
+            toggleBtn.textContent = shown ? d.toggleIngredients : d.showIngredients;
+            $("printRecipe").textContent = d.printRecipe;
+        }
+
+        // Toggle Ingredients Section
+        const toggleBtn = document.getElementById('toggleIngredients');
+        const ingredientsSection = document.getElementById('ingredientsSection');
+        let shown = true;
+        toggleBtn.onclick = function () {
+            shown = !shown;
+            ingredientsSection.style.display = shown ? '' : 'none';
+            const d = langData[currentLang];
+            toggleBtn.textContent = shown ? d.toggleIngredients : d.showIngredients;
+        };
+
+        // Print Recipe
+        document.getElementById('printRecipe').onclick = function () {
+            window.print();
+        };
+
+        // Language Switch
+        $("langSwitch").onclick = function () {
+            currentLang = currentLang === "en" ? "hi" : "en";
+            setLang(currentLang);
+        };
+
+        // Initialize
+        setLang(currentLang);
+    </script>
+</body>
+</html>

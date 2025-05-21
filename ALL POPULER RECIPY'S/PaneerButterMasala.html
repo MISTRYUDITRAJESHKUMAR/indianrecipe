@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paneer Butter Masala Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fffbea;
+            color: #5c3317;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #d35400;
+        }
+        .hero-image {
+            border-radius: 12px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+        h2 {
+            color: #b84300;
+            margin-top: 25px;
+        }
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .note {
+            background-color: #fff0cc;
+            border-left: 5px solid #ffa500;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        .lang-btn {
+            position: fixed;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 24px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            transition: background 0.2s;
+        }
+        .lang-btn:hover {
+            background: #b84300;
+        }
+        .video-frame {
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            border: none;
+            margin-top: 10px;
+        }
+        .custom-btn {
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s;
+        }
+        .custom-btn:hover {
+            filter: brightness(0.95);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .lang-btn {
+                font-size: 0.95rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button id="langSwitch" class="lang-btn">हिन्दी में देखें</button>
+    <div class="container">
+        <h1 id="title">🧈 Paneer Butter Masala Recipe</h1>
+        <img src="../assets/Paneer Butter Masala.jpg" alt="Paneer Butter Masala" class="hero-image" />
+
+        <div class="section" id="ingredientsSection">
+            <h2 id="ingredientsTitle">Ingredients</h2>
+            <h3 id="mainIngTitle">Main Ingredients:</h3>
+            <ul id="mainIngList"></ul>
+        </div>
+
+        <div class="section" id="instructionsSection">
+            <h2 id="instructionsTitle">Instructions</h2>
+            <h3 id="step1Title">Step 1: Sauté Base</h3>
+            <ol id="step1List"></ol>
+            <h3 id="step2Title">Step 2: Make the Gravy</h3>
+            <ol id="step2List"></ol>
+            <h3 id="step3Title">Step 3: Garnish & Serve</h3>
+            <ol id="step3List"></ol>
+        </div>
+
+        <div class="section" id="serveSection">
+            <h2 id="serveTitle">Serve With</h2>
+            <ul id="serveList"></ul>
+        </div>
+
+        <div class="note" id="tipNote">
+            🍽️ <strong>Tip:</strong> Soak paneer in warm water for 10 mins before adding to gravy for soft texture.
+        </div>
+        <div class="section" id="videoSection"></div>
+            <h2 id="videoTitle">Watch Video Suggestions</h2>
+            <iframe class="video-frame" width="100%" height="315"
+                src="https://www.youtube.com/embed/bUounn_Bmy4?si=LNBwUKd2VlaqKdwg"
+                title="Paneer Butter Masala Recipe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <div style="margin-top: 18px; text-align: center;">
+                <button id="toggleIngredients" class="custom-btn" style="background: #ff6600;">
+                    Hide Ingredients
+                </button>
+                <button id="printRecipe" class="custom-btn" style="background: #cc5200; margin-left: 10px;">
+                    Print Recipe
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Language Data
+        const langData = {
+            en: {
+                btn: "हिन्दी में देखें",
+                title: "🧈 Paneer Butter Masala Recipe",
+                ingredientsTitle: "Ingredients",
+                mainIngTitle: "Main Ingredients:",
+                mainIngList: [
+                    "200g paneer (cubed)",
+                    "2 tbsp butter",
+                    "1 tbsp oil",
+                    "1 bay leaf",
+                    "1 onion (finely chopped)",
+                    "2 tomatoes (pureed)",
+                    "1 tsp ginger-garlic paste",
+                    "1 tsp red chili powder",
+                    "½ tsp turmeric powder",
+                    "1 tsp garam masala",
+                    "1 tsp sugar (optional)",
+                    "Salt to taste",
+                    "2–3 tbsp fresh cream",
+                    "Fresh coriander for garnish"
+                ],
+                instructionsTitle: "Instructions",
+                step1Title: "Step 1: Sauté Base",
+                step1List: [
+                    "Heat oil and 1 tbsp butter in a pan. Add bay leaf and chopped onions. Sauté until golden.",
+                    "Add ginger-garlic paste and cook until raw smell goes away.",
+                    "Add tomato puree, red chili powder, turmeric, salt, and sugar. Cook until oil separates."
+                ],
+                step2Title: "Step 2: Make the Gravy",
+                step2List: [
+                    "Add ½ cup water and simmer for 5 minutes.",
+                    "Add paneer cubes, garam masala, and the remaining 1 tbsp butter.",
+                    "Mix gently and simmer for 3–4 minutes.",
+                    "Add fresh cream, stir and cook for 1 minute. Turn off heat."
+                ],
+                step3Title: "Step 3: Garnish & Serve",
+                step3List: [
+                    "Garnish with chopped coriander and a swirl of cream.",
+                    "Serve hot with naan, roti, or jeera rice."
+                ],
+                serveTitle: "Serve With",
+                serveList: [
+                    "Butter naan or garlic naan",
+                    "Jeera rice or plain basmati rice",
+                    "Green salad or onion rings"
+                ],
+                tipNote: '🍽️ <strong>Tip:</strong> Soak paneer in warm water for 10 mins before adding to gravy for soft texture.',
+                videoTitle: "Watch Video Suggestions",
+                toggleIngredients: "Hide Ingredients",
+                showIngredients: "Show Ingredients",
+                printRecipe: "Print Recipe"
+            },
+            hi: {
+                btn: "View in English",
+                title: "🧈 पनीर बटर मसाला रेसिपी",
+                ingredientsTitle: "सामग्री",
+                mainIngTitle: "मुख्य सामग्री:",
+                mainIngList: [
+                    "200 ग्राम पनीर (टुकड़ों में कटा)",
+                    "2 बड़े चम्मच मक्खन",
+                    "1 बड़ा चम्मच तेल",
+                    "1 तेजपत्ता",
+                    "1 प्याज (बारीक कटा हुआ)",
+                    "2 टमाटर (प्यूरी किया हुआ)",
+                    "1 छोटा चम्मच अदरक-लहसुन पेस्ट",
+                    "1 छोटा चम्मच लाल मिर्च पाउडर",
+                    "½ छोटा चम्मच हल्दी पाउडर",
+                    "1 छोटा चम्मच गरम मसाला",
+                    "1 छोटा चम्मच चीनी (वैकल्पिक)",
+                    "स्वादानुसार नमक",
+                    "2–3 बड़े चम्मच ताजा क्रीम",
+                    "गार्निश के लिए ताजा धनिया"
+                ],
+                instructionsTitle: "निर्देश",
+                step1Title: "चरण 1: बेस भूनें",
+                step1List: [
+                    "एक पैन में तेल और 1 बड़ा चम्मच मक्खन गरम करें। तेजपत्ता और प्याज डालें। सुनहरा होने तक भूनें।",
+                    "अदरक-लहसुन पेस्ट डालें और कच्ची खुशबू जाने तक पकाएं।",
+                    "टमाटर प्यूरी, लाल मिर्च पाउडर, हल्दी, नमक और चीनी डालें। तेल अलग होने तक पकाएं।"
+                ],
+                step2Title: "चरण 2: ग्रेवी बनाएं",
+                step2List: [
+                    "½ कप पानी डालें और 5 मिनट तक उबालें।",
+                    "पनीर के टुकड़े, गरम मसाला और बाकी 1 बड़ा चम्मच मक्खन डालें।",
+                    "धीरे से मिलाएं और 3–4 मिनट तक पकाएं।",
+                    "क्रीम डालें, मिलाएं और 1 मिनट पकाएं। गैस बंद करें।"
+                ],
+                step3Title: "चरण 3: गार्निश और परोसें",
+                step3List: [
+                    "कटा धनिया और क्रीम से गार्निश करें।",
+                    "गरमागरम नान, रोटी या जीरा राइस के साथ परोसें।"
+                ],
+                serveTitle: "साथ में परोसें",
+                serveList: [
+                    "बटर नान या गार्लिक नान",
+                    "जीरा राइस या सादा बासमती चावल",
+                    "ग्रीन सलाद या प्याज के छल्ले"
+                ],
+                tipNote: '🍽️ <strong>टिप:</strong> पनीर को ग्रेवी में डालने से पहले 10 मिनट गुनगुने पानी में भिगोएँ, इससे वह नरम रहेगा।',
+                videoTitle: "वीडियो सुझाव देखें",
+                toggleIngredients: "सामग्री छुपाएँ",
+                showIngredients: "सामग्री दिखाएँ",
+                printRecipe: "रेसिपी प्रिंट करें"
+            }
+        };
+
+        let currentLang = "en";
+        const $ = id => document.getElementById(id);
+
+        function setList(id, arr) {
+            const el = $(id);
+            el.innerHTML = "";
+            arr.forEach(item => {
+                const li = document.createElement(el.tagName === "UL" ? "li" : "li");
+                li.textContent = item;
+                el.appendChild(li);
+            });
+        }
+
+        function setLang(lang) {
+            const d = langData[lang];
+            $("langSwitch").textContent = d.btn;
+            $("title").textContent = d.title;
+            $("ingredientsTitle").textContent = d.ingredientsTitle;
+            $("mainIngTitle").textContent = d.mainIngTitle;
+            setList("mainIngList", d.mainIngList);
+            $("instructionsTitle").textContent = d.instructionsTitle;
+            $("step1Title").textContent = d.step1Title;
+            setList("step1List", d.step1List);
+            $("step2Title").textContent = d.step2Title;
+            setList("step2List", d.step2List);
+            $("step3Title").textContent = d.step3Title;
+            setList("step3List", d.step3List);
+            $("serveTitle").textContent = d.serveTitle;
+            setList("serveList", d.serveList);
+            $("tipNote").innerHTML = d.tipNote;
+            $("videoTitle").textContent = d.videoTitle;
+            toggleBtn.textContent = shown ? d.toggleIngredients : d.showIngredients;
+            $("printRecipe").textContent = d.printRecipe;
+        }
+
+        // Toggle Ingredients Section
+        const toggleBtn = document.getElementById('toggleIngredients');
+        const ingredientsSection = document.getElementById('ingredientsSection');
+        let shown = true;
+        toggleBtn.onclick = function () {
+            shown = !shown;
+            ingredientsSection.style.display = shown ? '' : 'none';
+            const d = langData[currentLang];
+            toggleBtn.textContent = shown ? d.toggleIngredients : d.showIngredients;
+        };
+
+        // Print Recipe
+        document.getElementById('printRecipe').onclick = function () {
+            window.print();
+        };
+
+        // Language Switch
+        $("langSwitch").onclick = function () {
+            currentLang = currentLang === "en" ? "hi" : "en";
+            setLang(currentLang);
+        };
+
+        // Initialize
+        setLang(currentLang);
+    </script>
+</body>
+</html>
